@@ -29,10 +29,16 @@
       property="og:image"
       content="https://github.com/user-attachments/assets/c94eb7f2-81f8-4b75-8847-1d32f8016c92"
     />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Kumar+One&family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Kumar+One&family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
     <link rel="stylesheet" href="style.css" />
     <title>Bar Tracker</title>
   </head>
@@ -40,7 +46,7 @@
     <!-- 네비게이션 바 -->
     <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container">
-        <a class="navbar-brand logo" href="#">Bar Tracker</a>
+        <a class="navbar-brand" href="#">Bar Tracker</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -51,7 +57,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="#">홈</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">홈</a>
+            </li>
             <li class="nav-item"><a class="nav-link" href="#">추천</a></li>
             <li class="nav-item"><a class="nav-link" href="#">인기 술집</a></li>
             <li class="nav-item"><a class="nav-link" href="#">이벤트</a></li>
@@ -60,63 +68,21 @@
       </div>
     </nav>
 
-    <!-- 이미지 슬라이더 -->
-    <div id="barSlider" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img
-            src="https://source.unsplash.com/1600x500/?bar"
-            class="d-block w-100"
-            alt="바 이미지"
-          />
-        </div>
-        <div class="carousel-item">
-          <img
-            src="https://source.unsplash.com/1600x500/?cocktail"
-            class="d-block w-100"
-            alt="칵테일"
-          />
-        </div>
-        <div class="carousel-item">
-          <img
-            src="https://source.unsplash.com/1600x500/?pub"
-            class="d-block w-100"
-            alt="펍"
-          />
-        </div>
-      </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#barSlider"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#barSlider"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      </button>
-    </div>
-
-    <!-- 추천 섹션 -->
+    <!-- 추천 술집 목록 -->
     <section class="container my-5">
-      <h2 class="text-center">오늘의 추천 술집</h2>
+      <h2 class="text-center">추천 술집</h2>
       <div class="row">
         <div class="col-md-4">
           <div class="card bg-dark text-white">
             <img
               src="https://source.unsplash.com/400x300/?bar"
               class="card-img-top"
-              alt="추천 바"
+              alt="바 이미지"
             />
             <div class="card-body">
               <h5 class="card-title">모던 바</h5>
               <p class="card-text">세련된 분위기의 칵테일 바</p>
+              <a href="#" class="btn btn-primary">자세히 보기</a>
             </div>
           </div>
         </div>
@@ -125,11 +91,12 @@
             <img
               src="https://source.unsplash.com/400x300/?pub"
               class="card-img-top"
-              alt="추천 펍"
+              alt="펍 이미지"
             />
             <div class="card-body">
               <h5 class="card-title">클래식 펍</h5>
               <p class="card-text">편안한 분위기의 맥주 펍</p>
+              <a href="#" class="btn btn-primary">자세히 보기</a>
             </div>
           </div>
         </div>
@@ -138,11 +105,12 @@
             <img
               src="https://source.unsplash.com/400x300/?cocktail"
               class="card-img-top"
-              alt="추천 칵테일 바"
+              alt="칵테일 바 이미지"
             />
             <div class="card-body">
               <h5 class="card-title">칵테일 라운지</h5>
               <p class="card-text">다양한 칵테일을 즐길 수 있는 라운지</p>
+              <a href="#" class="btn btn-primary">자세히 보기</a>
             </div>
           </div>
         </div>
