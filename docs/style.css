@@ -27,3 +27,13 @@ body {
   height: 500px;
   object-fit: cover;
 }
+
+#box p {
+  white-space: pre-wrap;
+}
+
+.testForm {
+  text-align: center;
+  padding-left: 40px;
+  padding-right: 40px;
+}

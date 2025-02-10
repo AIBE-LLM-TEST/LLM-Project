@@ -8,17 +8,21 @@ async function main() {
 
     const formData = new FormData(document.querySelector("#ccForm"));
     const text = formData.get("text");
-    const url = "http://127.0.0.1:3000";
+    const url = "https://alder-childish-thursday.glitch.me";
     const response = await fetch(url, {
       method: "POST",
       body: JSON.stringify({
         text,
       }),
-      // 설정 꼭 하기
-      headers: { "Content-Type": "application/json" },
+      headers: {
+        "Content-Type": "Application/json",
+      },
     });
     const json = await response.json();
+
+    // 로딩을 추가했다가 종료시 없애는...
     spinner.remove();
+
     // document.querySelector("#box").textContent = JSON.stringify(json);
 
     // server로 url, 내용을 던져주는 걸 구조분해 할당
@@ -35,6 +39,7 @@ async function main() {
     box.appendChild(imageTag);
     box.appendChild(descTag);
   }
+
   document.querySelector("#ccForm").addEventListener("submit", handleCC);
 }
 
